@@ -84,7 +84,7 @@ for ff=1:numPages
             fprintf(htmlobj.fh,'</tr>\n');
             
         end
-        rowstr = sprintf('<td><i> %d </i></td>',i-1);
+        rowstr = sprintf('<td><i><a href="#row%d" name="row%d"> %d </a></i></td>', i-1, i-1, i-1);
         for j=1:nc
             rowstr = sprintf('%s <td>%s</td>',rowstr,htmlobj.tblInfo{tblId}.rowData{i}{j});
         end
