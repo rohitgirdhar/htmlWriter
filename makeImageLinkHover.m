@@ -15,7 +15,7 @@ else
     else
         linkStr=sprintf('<div style="position: relative; left: 0; top: 0;"><a href="%s"><img src="%s" width=%d onmouseover="this.src=''%s''; this.width=''%d''" onmouseout="this.src=''%s''; this.width=''%d''" style="position: relative; top: 0; left: 0;" /></a>',imgPath1,imgPath1,width,imgPath2,hover_width,imgPath1,width);
         if (isfield(params, 'check') && params.check)
-            linkStr = [linkStr, sprintf('<img src="static/check.png" style="position: absolute; bottom: -5px; right: -5px; width: %d;" />', width / 5)];
+            linkStr = [linkStr, sprintf('<img src="http://www.andrew.cmu.edu/user/rgirdhar/projects/001_Matching/results/0001_BoW/bow_matches/static/check.png" style="position: absolute; bottom: -5px; right: -5px; width: %d;" />', width / 5)];
         end
         linkStr = [linkStr, '</div>'];
     end
